@@ -3,3 +3,5 @@
 .htaccess
 wp-config.php
 wp-content/uploads
+wp-content/mysql.sql
+wp-content/mu-plugins
