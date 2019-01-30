@@ -1,0 +1,98 @@
+.main-menu {
+  @include clearfix;
+  font-family: $font-family-sans;
+  font-weight: 300;
+  max-width: 800px;
+  margin: 0 auto;
+
+  a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    outline: none;
+  }
+
+  br { display: none; }
+
+  > li {
+    
+    > a {
+      font-size: em(22);
+      line-height: 1.4;
+      padding: 1rem 0;
+    }
+
+    li {
+      line-height: 1.2;
+
+      a { padding: 0.8rem 1rem; }
+
+      &:last-child { margin-bottom: 0; }
+
+    }
+
+  }
+
+
+  @include for-tablet-portrait-up {
+    
+    a {
+      display: inline;
+      @include inline-link-animation($border-color: color('primary'), $hover-border-color: #ffffff)
+    }
+
+    br { display: block; }
+
+    > li {
+      float: left;
+      width: 25%;
+      margin-bottom: 3rem;
+      // padding: 0 1rem 0 1rem;
+      // border-left: 1px solid rgba(255,255,255,0.3);
+  
+      &:last-child { padding-right: 0; }
+      
+      > a {
+        padding: 0;
+      }
+  
+      ul {
+        margin-top: 1rem;
+      }
+  
+      li {
+        padding: 0.5rem 0;
+  
+        &:last-child { margin-bottom: 0; }
+  
+        a {
+          display: inline-block;
+          padding: 0;
+        }
+  
+      }
+  
+    }
+
+  }
+
+
+  @include for-desktop-up {
+    max-width: none;
+
+    > li {
+      width: auto;
+      border: none;
+      padding: 0 3.5rem 0 0;
+
+      li {
+
+        > a { padding: 0; }
+
+      }
+    
+    }
+
+  }
+
+}

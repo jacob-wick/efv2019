@@ -1,0 +1,44 @@
+.package-accordion {
+
+  &__head {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    color: color('primary');
+    text-align: left;
+    outline: none;
+    transition: opacity .5s ease;
+    -webkit-appearance: none;
+    
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &::after {
+      content: "\0203A";
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      margin-left: 5px;
+      font-size: em(20);
+      transform: rotate(90deg);
+      transition: all .5s ease;
+    }
+
+    &.is-active {
+      &::after { transform: rotate(-90deg); }
+    }
+
+  }
+
+  &__content {
+    display: none;
+
+    .no-js & { display: block; }
+  }
+
+}

@@ -1,0 +1,111 @@
+button, input[type=submit] {
+  -webkit-appearance: none;
+}
+
+
+body .gform_wrapper {
+  font-family: $font-family-sans;
+
+  li { font-family: $font-family-sans; }
+
+  input[type=text],
+  input[type=email],
+  input[type=password] {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  h3.gform_title {
+    @include header('h3');
+    font-weight: normal;
+    margin-bottom: pad('sm');
+    text-align: center;
+  }
+
+  span.gform_description {
+    @include para('sans');
+    display: block;
+    text-align: center;
+    margin-bottom: pad('md');
+
+    strong { font-weight: 400; }
+
+    p { margin-bottom: pad('sm'); }
+
+  }
+
+  ul.gform_fields li.gfield {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .ginput_complex.ginput_container {
+
+    .name_first label,
+    .name_last label { margin-top: 6px; }
+
+  }
+
+  .field_description_above .gfield_description {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+  }
+
+  div.ginput_container.ginput_container_select {
+    height: 40px;
+    padding: 3px 8px;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+    background-color: #ffffff;
+    background-image: url('../img/select-arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+
+  div.ginput_container.ginput_container_select select {
+    padding: 5px 8px;
+    width: 102%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+
+    &:focus { outline: none; }
+  }
+
+  // ul.gfield_radio li input[type=radio],
+  ul.gfield_checkbox li input[type=checkbox] {
+    vertical-align: top;
+  }
+
+  .gform_footer input.button,
+  .gform_footer input[type=submit],
+  .gform_page_footer input.button,
+  .gform_page_footer input[type=submit] {
+    @extend .btn;
+    @extend .btn--liquid;
+    @extend .btn--liquid-red;
+  }
+
+  /*
+  // GravityForms breakpoint
+  @media only screen and (min-width: 641px) {
+
+  }
+  */
+
+}
+
+.gform_confirmation_message {
+  padding: 2rem;
+  @include header('h4-sans');
+  text-align: center;
+  background-color: color('secondary');
+
+  .fancybox-content & {
+    margin: 3rem 0;
+  }
+}

@@ -1,0 +1,140 @@
+.layover {
+  z-index: 2;
+  position: absolute;
+  top: -1px;
+  height: 1px;
+  width: 100%;
+  padding-top: 10rem;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .25s ease;  
+  
+  body.show-layover & {
+    display: block;
+    top: 0;
+    height: 100%;
+    opacity: 1;
+    overflow: auto;
+    background-color: color('primary');
+  }
+
+  &__inner {
+    @include clearfix;
+    z-index: 1;
+    position: relative;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__menu {
+    margin: 0 auto;
+    max-width: site-width('lg');
+  }
+
+  &__cover {
+    z-index: 2;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+
+    // background-color: color('primary');
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f45347+0,f45347+73,f45347+100&1+73,0+99 */
+    background: -moz-linear-gradient(top, rgba(244,83,71,1) 0%, rgba(244,83,71,1) 73%, rgba(244,83,71,0) 99%, rgba(244,83,71,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(244,83,71,1) 0%,rgba(244,83,71,1) 73%,rgba(244,83,71,0) 99%,rgba(244,83,71,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(244,83,71,1) 0%,rgba(244,83,71,1) 73%,rgba(244,83,71,0) 99%,rgba(244,83,71,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f45347', endColorstr='#00f45347',GradientType=0 ); /* IE6-9 */
+  
+    body.show-layover & { display: block; }
+  }
+
+
+  @include for-tablet-portrait-up {
+
+    padding-top: 14rem;
+
+    &__cover {
+      height: 225px;
+    }
+
+  }
+
+}
+
+
+.layover-cta {
+  @include clearfix;
+  margin: 0 auto;
+  max-width: site-width('lg');
+  color: #ffffff;
+  
+  &__title {
+    margin-bottom: 2rem;
+    
+    br { display: none; }
+  }
+
+  &__button { margin-bottom: 2rem; }
+
+  &__social { padding-bottom: 4rem; }
+  
+
+  @include for-tablet-portrait-up {
+
+    &__title {
+      float: left;
+      width: span(4 of 12);
+      margin-right: span(1 of 12) + gutter();
+    }
+  
+    &__message {
+      float: left;
+      width: span(7 of 12);
+    }
+
+  }
+
+
+  @include for-tablet-landscape-up {
+
+    &__title {
+      width: span(3 of 12);
+
+      br { display: block; }
+    }
+
+    &__subtitle {
+      letter-spacing: 3.2px;
+    }
+
+    &__links {
+      @include clearfix;
+      margin: 0 auto;
+    }
+
+    &__social {
+      float: left;
+      width: span(4 of 8);
+    }
+
+    &__button {
+      float: right;
+      width: span(4 of 8);
+    }
+
+  }
+
+  @include for-desktop-up {
+
+    &__title {
+      float: left;
+      width: span(3 of 12);
+    }
+
+  }
+
+
+}

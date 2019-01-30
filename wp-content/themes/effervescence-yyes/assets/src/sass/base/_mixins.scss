@@ -1,0 +1,160 @@
+@mixin for-tablet-portrait-up {
+  @media (min-width: 620px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+// Max width breakpoints
+@mixin for-phone-only {
+  @media (max-width: 619px) { @content; }
+}
+
+
+/**
+ * 
+ * Relies on the $pad map specified in _variables.scss
+ *
+ **/
+
+@function pad($size) {
+
+  @if map-has-key($pad, $size) {
+    @return map-get($pad, $size);
+  }
+
+	@warn "Unfortunately, no value could be retrieved from `#{$size}`. " + "Please make sure it is defined in the $pad map.";
+	@return null;
+
+}
+
+
+/**
+ * 
+ * Relies on the $color map specified in _variables.scss
+ *
+ **/
+@function color($color) {
+
+  @if map-has-key($colors, $color) {
+    @return map-get($colors, $color);
+  }
+
+	@warn "Unfortunately, no value could be retrieved from `#{$colors}`. " + "Please make sure it is defined in the $colors map.";
+	@return null;
+
+}
+
+
+/**
+ * 
+ * Relies on the $radius map specified in _variables.scss
+ *
+ **/
+@function radius($size) {
+
+  @if map-has-key($radius, $size) {
+    @return map-get($radius, $size);
+  }
+
+	@warn "Unfortunately, no value could be retrieved from `#{$radius}`. " + "Please make sure it is defined in the $radius map.";
+	@return null;
+
+}
+
+
+/**
+ * 
+ * Relies on the $site-width map specified in _variables.scss
+ *
+ **/
+@function site-width($width) {
+
+  @if map-has-key($site-width, $width) {
+    @return map-get($site-width, $width);
+  }
+
+	@warn "Unfortunately, no value could be retrieved from `#{$width}`. " + "Please make sure it is defined in the $site-width map.";
+	@return null;
+
+}
+
+
+/**
+ * 
+ * Relies on the $line-height map specified in _variables.scss
+ *
+ **/
+@function line-height($height) {
+
+  @if map-has-key($line-height, $height) {
+    @return map-get($line-height, $height);
+  }
+
+	@warn "Unfortunately, no value could be retrieved from `#{$height}`. " + "Please make sure it is defined in the $line-height map.";
+	@return null;
+
+}
+
+
+/**
+ *
+ *
+ * @author Adam Meyer <dev@apmeyer.com>
+ */
+@mixin pull-up-down-content() {
+  > *:first-child { margin-top: 0 !important; }
+  > *:last-child { margin-bottom: 0 !important; }
+}
+
+
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin arrow-link {
+  //position: relative;
+  text-decoration: none;
+  line-height: 1.3;
+  transition: all .25s ease;
+
+  &::after {
+    content: '\0203A';
+    margin-left: 5px;
+  }
+
+  &:hover,
+  &:focus {
+    color: color('primary');
+  }
+
+  .wysiwyg & { text-decoration: none; }
+
+}
+.arrow-link { @include arrow-link; }
+
+
+@mixin bubble-label($label) {
+
+  /*
+  &::before {
+    content: $label;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  */
+  
+}

@@ -1,0 +1,70 @@
+$font-family-sans: 'Josefin Sans', sans-serif;
+$font-family-text: 'Cormorant-Regular', serif;
+$font-family-head: 'Cormorant-Light', serif;
+
+$colors: (
+  primary: #F45347,
+  primary-dk: #cccccc,
+  secondary: #F7E7CE,
+  warning: #6b0e0e,
+  rule: #cccccc,
+  rule-lt: #cccccc,
+  background: #cccccc,
+  background-dk: #2D171D,
+  background-lt: #cccccc,
+  text: #4A4A4A,
+);
+
+$site-width: (
+  sm: 400px,
+  md: 600px,
+  lg: 1000px,
+  xl: 1400px
+);
+
+$radius: (
+  sm: 3px,
+  md: 6px,
+  lg: 9px,
+);
+
+$line-height: (
+  sm: 115%,
+  md: 130%,
+  lg: 160%
+);
+
+$pad: (
+  xs: .5rem,
+  sm: 1rem,
+	md: 2rem,
+	lg: 3rem,
+	xl: 4rem
+);
+
+
+// VENDOR: Hamburger - - - - - - - - - - - - - - - - - - - - -
+$hamburger-padding-x                       : 0px;
+$hamburger-padding-y                       : 0px;
+$hamburger-layer-width                     : 30px;
+$hamburger-layer-height                    : 1px;
+$hamburger-layer-spacing                   : 6px;
+$hamburger-layer-color                     : #ffffff;
+$hamburger-layer-border-radius             : 1px;
+$hamburger-hover-opacity                   : 1.0;
+// $hamburger-hover-transition-duration       : 0.15s;
+// $hamburger-hover-transition-timing-function: linear;
+$hamburger-types													 : (squeeze);
+
+
+// SUSY - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// 12 symmetrical, fluid columns
+// gutters are 1/4 the size of a column
+// elements span 1 less gutter than columns
+// containers span 1 less gutter as well
+$susy: (
+  'columns': susy-repeat(12),
+  'gutters': 0.25,
+  'spread': 'narrow',
+  'container-spread': 'narrow',
+);

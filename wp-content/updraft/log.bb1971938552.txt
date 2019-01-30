@@ -1,0 +1,386 @@
+0000.000 (0) Opened log file at time: Sat, 18 Aug 2018 22:14:22 +0000 on https://effervescence.staging.wpengine.com
+0000.003 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.14.11 WP: 4.9.6 PHP: 7.0.30-0ubuntu0.16.04.1 (apache2handler, Linux pod-120240 3.13.0-153-generic #203-Ubuntu SMP Thu Jun 14 08:52:28 UTC 2018 x86_64) MySQL: 5.7.22 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 50M | 2M) multisite: N openssl: OpenSSL 1.0.2g  1 Mar 2016 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.004 (0) Free space on disk containing Updraft's temporary directory: Unknown
+0000.019 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.026 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.030 (0) Semaphore (fd, wp_options) was stuck, set lock time to 2018-08-18 22:14:22
+0000.033 (0) Semaphore (fd, wp_options) reset to 1
+0000.035 (0) Set semaphore last lock (fd) time to 2018-08-18 22:14:22
+0000.037 (0) Semaphore lock (fd) complete
+0000.043 (0) Backup run: resumption=0, nonce=bb1971938552, begun at=1534630462 (0s ago), job type=backup
+0000.046 (0) Scheduling a resumption (1) after 300 seconds (1534630762) in case this run gets aborted
+0000.057 (0) Checking if we have a zip executable available
+0000.061 (0) Creation of backups of directories: beginning
+0000.068 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0001.641 (0) Total entities for the zip file: 645 directories, 4247 files (0 skipped as non-modified), 62.8 MB
+0001.664 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0001.678 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0001.692 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0001.708 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0001.725 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0001.728 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (18.8 MB, 4247 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0004.154 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 600 files added (on-disk size: 5781.9 KB)
+0004.173 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 700 files added (on-disk size: 5781.9 KB)
+0004.194 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 800 files added (on-disk size: 5781.9 KB)
+0004.216 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 900 files added (on-disk size: 5781.9 KB)
+0004.241 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 1000 files added (on-disk size: 5781.9 KB)
+0004.244 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.9 MB, 4247 files batched, 501 (1002) added so far); re-opening (prior size: 5781.9 KB)
+0004.787 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 1100 files added (on-disk size: 6738.5 KB)
+0004.810 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 1200 files added (on-disk size: 6738.5 KB)
+0004.835 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 1300 files added (on-disk size: 6738.5 KB)
+0004.861 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 1400 files added (on-disk size: 6738.5 KB)
+0004.890 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 1500 files added (on-disk size: 6738.5 KB)
+0004.894 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.2 MB, 4247 files batched, 501 (1503) added so far); re-opening (prior size: 6738.5 KB)
+0005.348 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 1600 files added (on-disk size: 7663.1 KB)
+0005.373 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 1700 files added (on-disk size: 7663.1 KB)
+0005.399 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 1800 files added (on-disk size: 7663.1 KB)
+0005.426 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 1900 files added (on-disk size: 7663.1 KB)
+0005.454 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 2000 files added (on-disk size: 7663.1 KB)
+0005.458 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.7 MB, 4247 files batched, 501 (2004) added so far); re-opening (prior size: 7663.1 KB)
+0006.531 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 2100 files added (on-disk size: 8737.4 KB)
+0006.561 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 2200 files added (on-disk size: 8737.4 KB)
+0006.594 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 2300 files added (on-disk size: 8737.4 KB)
+0006.623 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 2400 files added (on-disk size: 8737.4 KB)
+0006.653 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 2500 files added (on-disk size: 8737.4 KB)
+0006.658 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (10.6 MB, 4247 files batched, 501 (2505) added so far); re-opening (prior size: 8737.4 KB)
+0008.837 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 2600 files added (on-disk size: 12476.8 KB)
+0008.887 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 2700 files added (on-disk size: 12476.8 KB)
+0008.939 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 2800 files added (on-disk size: 12476.8 KB)
+0009.004 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 2900 files added (on-disk size: 12476.8 KB)
+0009.060 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 3000 files added (on-disk size: 12476.8 KB)
+0009.067 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (13.9 MB, 4247 files batched, 501 (3006) added so far); re-opening (prior size: 12476.8 KB)
+0011.271 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 3100 files added (on-disk size: 17433 KB)
+0011.308 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 3200 files added (on-disk size: 17433 KB)
+0011.344 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 3300 files added (on-disk size: 17433 KB)
+0011.382 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 3400 files added (on-disk size: 17433 KB)
+0011.421 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 3500 files added (on-disk size: 17433 KB)
+0011.427 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8.2 MB, 4247 files batched, 501 (3507) added so far); re-opening (prior size: 17433 KB)
+0013.084 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 3600 files added (on-disk size: 19740.7 KB)
+0013.128 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 3700 files added (on-disk size: 19740.7 KB)
+0013.170 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 3800 files added (on-disk size: 19740.7 KB)
+0013.212 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 3900 files added (on-disk size: 19740.7 KB)
+0013.253 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 4000 files added (on-disk size: 19740.7 KB)
+0013.259 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.2 MB, 4247 files batched, 501 (4008) added so far); re-opening (prior size: 19740.7 KB)
+0014.520 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 4100 files added (on-disk size: 20557.2 KB)
+0014.570 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip.tmp: 4200 files added (on-disk size: 20557.2 KB)
+0015.525 (0) Created plugins zip (0) - 21215.1 KB in 15.5 s (1372.8 KB/s) (sha1: 1db8dbec26b69d6c547063ce067d68005bb825bc, sha256: 7cb3df95b9f62b09151ce408015393029881f0e2872e399c82c97540f6178983)
+0015.531 (0) Beginning creation of dump of themes (split every: 400 MB)
+0015.761 (0) Total entities for the zip file: 80 directories, 792 files (0 skipped as non-modified), 31.3 MB
+0015.770 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0015.780 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0015.791 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0015.801 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25 MB, 792 files batched, 395 (395) added so far); re-opening (prior size: 0 KB)
+0019.027 (0) A useful amount of data was added after this amount of zip processing: 3.6 s (normalised: 3.6 s, rate: 7043.2 KB/s)
+0019.031 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.63674592972, normalised_time=3.63471992388, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=43273320)
+0019.038 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-themes.zip.tmp: 400 files added (on-disk size: 24572.2 KB)
+0019.050 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-themes.zip.tmp: 500 files added (on-disk size: 24572.2 KB)
+0019.063 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-themes.zip.tmp: 600 files added (on-disk size: 24572.2 KB)
+0019.076 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-themes.zip.tmp: 700 files added (on-disk size: 24572.2 KB)
+0020.086 (0) Created themes zip (0) - 28425 KB in 4.6 s (6242.7 KB/s) (sha1: 6657bf15279997aa3a4067db502e1a262c0dfa4a, sha256: 44e3a3592b129eb2be4c05226a0f3f816d8c4f185a4b374f8002160406a0ff6b)
+0020.091 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0020.093 (0) Looking for candidates to back up in: /nas/content/staging/effervescence/wp-content/uploads
+0020.095 (0) finding files: 2017: adding to list (1)
+0020.096 (0) finding files: wp-migrate-db: adding to list (2)
+0020.098 (0) finding files: alm_templates: adding to list (3)
+0020.099 (0) finding files: 2018: adding to list (4)
+0020.102 (0) finding files: gravity_forms: adding to list (5)
+0020.103 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0020.286 (0) Total entities for the zip file: 15 directories, 1858 files (0 skipped as non-modified), 135.4 MB
+0020.294 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0020.302 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0020.312 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 300 files added (on-disk size: 0 KB)
+0020.322 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 400 files added (on-disk size: 0 KB)
+0020.334 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 500 files added (on-disk size: 0 KB)
+0020.337 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (34.9 MB, 1858 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0025.254 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 600 files added (on-disk size: 35603.1 KB)
+0025.276 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 700 files added (on-disk size: 35603.1 KB)
+0025.297 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 800 files added (on-disk size: 35603.1 KB)
+0025.317 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 900 files added (on-disk size: 35603.1 KB)
+0025.347 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 1000 files added (on-disk size: 35603.1 KB)
+0025.352 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (36.4 MB, 1858 files batched, 501 (1002) added so far); re-opening (prior size: 35603.1 KB)
+0029.072 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 1100 files added (on-disk size: 72922.5 KB)
+0029.095 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 1200 files added (on-disk size: 72922.5 KB)
+0029.120 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 1300 files added (on-disk size: 72922.5 KB)
+0029.145 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 1400 files added (on-disk size: 72922.5 KB)
+0029.171 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 1500 files added (on-disk size: 72922.5 KB)
+0029.176 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (33.5 MB, 1858 files batched, 501 (1503) added so far); re-opening (prior size: 72922.5 KB)
+0032.799 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 1600 files added (on-disk size: 107343.2 KB)
+0032.837 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 1700 files added (on-disk size: 107343.2 KB)
+0032.888 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip.tmp: 1800 files added (on-disk size: 107343.2 KB)
+0037.751 (0) Created uploads zip (0) - 138445.4 KB in 17.6 s (7845.2 KB/s) (sha1: 364d17b1795b125de96aff5a2dba33dc2078e6ad, sha256: 6039d2358cbeee0d2dccf04ad30dd83d54846619ac71da9bc7288bb6db36a08e)
+0037.759 (0) Beginning backup of other directories found in the content directory (index: 0)
+0037.761 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0037.763 (0) Looking for candidates to back up in: /nas/content/staging/effervescence/wp-content
+0037.765 (0) finding files: uploads: skipping: this is the uploads directory
+0037.767 (0) finding files: mysql.sql: skipping: excluded by options
+0037.768 (0) finding files: themes: skipping: this is the themes directory
+0037.770 (0) finding files: upgrade: skipping: excluded by options
+0037.772 (0) finding files: updraft: skipping: this is the updraft directory
+0037.774 (0) finding files: advanced-cache.php: adding to list (1)
+0037.775 (0) finding files: mu-plugins: adding to list (2)
+0037.778 (0) finding files: index.php: adding to list (3)
+0037.779 (0) finding files: plugins: skipping: this is the plugins directory
+0037.842 (0) Total entities for the zip file: 12 directories, 102 files (0 skipped as non-modified), 1.1 MB
+0037.851 (0) Zip: backup_2018-08-18-2214_Effervescence_bb1971938552-others.zip.tmp: 100 files added (on-disk size: 0 KB)
+0038.069 (0) Created others zip (0) - 616.2 KB in 0.3 s (2148 KB/s) (sha1: 4cf39122ce0526c9ab3abd2133e3a8ea1d67657a, sha256: bc1ae3448b09b11697263879d2f9c2325357aaf077aec881cfc2e4f3adc9f1cf)
+0038.079 (0) Saving backup status to database (elements: 8)
+0038.083 (0) Beginning creation of database dump (WordPress DB)
+0038.219 (0) Table wp_options: Total expected rows (approximate): 620
+0038.282 (0) Table wp_options: Total rows added: 626 in 0.06 seconds
+0038.285 (0) Table wp_options: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_options.table.gz - 88.1 KB)
+0038.295 (0) Table wp_users: Total expected rows (approximate): 10
+0038.300 (0) Table wp_users: Total rows added: 10 in 0.00 seconds
+0038.303 (0) Table wp_users: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_users.table.gz - 1.3 KB)
+0038.311 (0) Table wp_usermeta: Total expected rows (approximate): 237
+0038.318 (0) Table wp_usermeta: Total rows added: 240 in 0.00 seconds
+0038.322 (0) Table wp_usermeta: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_usermeta.table.gz - 5.5 KB)
+0038.331 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0038.335 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0038.338 (0) Table wp_commentmeta: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0038.344 (0) Table wp_comments: Total expected rows (approximate): 0
+0038.349 (0) Table wp_comments: Total rows added: 0 in 0.00 seconds
+0038.352 (0) Table wp_comments: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_comments.table.gz - 0.5 KB)
+0038.361 (0) Table wp_links: Total expected rows (approximate): 0
+0038.365 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0038.368 (0) Table wp_links: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_links.table.gz - 0.4 KB)
+0038.376 (0) Table wp_postmeta: Total expected rows (approximate): 5099
+0038.460 (0) Table wp_postmeta: Total rows added: 4602 in 0.08 seconds
+0038.463 (0) Table wp_postmeta: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_postmeta.table.gz - 106 KB)
+0038.471 (0) Table wp_posts: Total expected rows (approximate): 653
+0038.508 (0) Table wp_posts: Total rows added: 742 in 0.04 seconds
+0038.511 (0) Table wp_posts: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_posts.table.gz - 61 KB)
+0038.519 (0) Table wp_term_relationships: Total expected rows (approximate): 190
+0038.524 (0) Table wp_term_relationships: Total rows added: 187 in 0.00 seconds
+0038.526 (0) Table wp_term_relationships: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_term_relationships.table.gz - 0.9 KB)
+0038.533 (0) Table wp_term_taxonomy: Total expected rows (approximate): 87
+0038.538 (0) Table wp_term_taxonomy: Total rows added: 129 in 0.00 seconds
+0038.540 (0) Table wp_term_taxonomy: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_term_taxonomy.table.gz - 2 KB)
+0038.548 (0) Table wp_termmeta: Total expected rows (approximate): 1003
+0038.569 (0) Table wp_termmeta: Total rows added: 1628 in 0.02 seconds
+0038.572 (0) Table wp_termmeta: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_termmeta.table.gz - 40.6 KB)
+0038.579 (0) Table wp_terms: Total expected rows (approximate): 87
+0038.584 (0) Table wp_terms: Total rows added: 129 in 0.00 seconds
+0038.587 (0) Table wp_terms: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_terms.table.gz - 2.7 KB)
+0038.594 (0) Table wp_yoast_seo_links: Total expected rows (approximate): 46
+0038.597 (0) Table wp_yoast_seo_links: Total rows added: 46 in 0.00 seconds
+0038.600 (0) Table wp_yoast_seo_links: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_yoast_seo_links.table.gz - 1.2 KB)
+0038.607 (0) Table wp_yoast_seo_meta: Total expected rows (approximate): 848
+0038.618 (0) Table wp_yoast_seo_meta: Total rows added: 1583 in 0.01 seconds
+0038.620 (0) Table wp_yoast_seo_meta: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_yoast_seo_meta.table.gz - 4.3 KB)
+0038.628 (0) Table wp_alm: Total expected rows (approximate): 0
+0038.632 (0) Table wp_alm: Total rows added: 1 in 0.00 seconds
+0038.634 (0) Table wp_alm: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_alm.table.gz - 0.4 KB)
+0038.640 (0) Table wp_ewwwio_images: Total expected rows (approximate): 1353
+0038.695 (0) Table wp_ewwwio_images: Total rows added: 1466 in 0.05 seconds
+0038.698 (0) Table wp_ewwwio_images: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_ewwwio_images.table.gz - 113.9 KB)
+0038.706 (0) Table wp_gf_addon_feed: Total expected rows (approximate): 1
+0038.709 (0) Table wp_gf_addon_feed: Total rows added: 1 in 0.00 seconds
+0038.712 (0) Table wp_gf_addon_feed: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_addon_feed.table.gz - 0.6 KB)
+0038.719 (0) Table wp_gf_draft_submissions: Total expected rows (approximate): 0
+0038.723 (0) Table wp_gf_draft_submissions: Total rows added: 0 in 0.00 seconds
+0038.724 (0) Table wp_gf_draft_submissions: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_draft_submissions.table.gz - 0.4 KB)
+0038.731 (0) Table wp_gf_entry: Total expected rows (approximate): 0
+0038.735 (0) Table wp_gf_entry: Total rows added: 0 in 0.00 seconds
+0038.737 (0) Table wp_gf_entry: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_entry.table.gz - 0.5 KB)
+0038.744 (0) Table wp_gf_entry_meta: Total expected rows (approximate): 0
+0038.747 (0) Table wp_gf_entry_meta: Total rows added: 0 in 0.00 seconds
+0038.750 (0) Table wp_gf_entry_meta: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_entry_meta.table.gz - 0.4 KB)
+0038.757 (0) Table wp_gf_entry_notes: Total expected rows (approximate): 0
+0038.761 (0) Table wp_gf_entry_notes: Total rows added: 0 in 0.00 seconds
+0038.763 (0) Table wp_gf_entry_notes: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_entry_notes.table.gz - 0.4 KB)
+0038.771 (0) Table wp_gf_form: Total expected rows (approximate): 0
+0038.774 (0) Table wp_gf_form: Total rows added: 0 in 0.00 seconds
+0038.776 (0) Table wp_gf_form: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_form.table.gz - 0.4 KB)
+0038.783 (0) Table wp_gf_form_meta: Total expected rows (approximate): 0
+0038.787 (0) Table wp_gf_form_meta: Total rows added: 0 in 0.00 seconds
+0038.789 (0) Table wp_gf_form_meta: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_form_meta.table.gz - 0.3 KB)
+0038.796 (0) Table wp_gf_form_view: Total expected rows (approximate): 0
+0038.800 (0) Table wp_gf_form_view: Total rows added: 0 in 0.00 seconds
+0038.802 (0) Table wp_gf_form_view: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_form_view.table.gz - 0.4 KB)
+0038.809 (0) Table wp_redirection_404: Total expected rows (approximate): 0
+0038.812 (0) Table wp_redirection_404: Total rows added: 0 in 0.00 seconds
+0038.815 (0) Table wp_redirection_404: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_redirection_404.table.gz - 0.4 KB)
+0038.823 (0) Table wp_redirection_groups: Total expected rows (approximate): 2
+0038.827 (0) Table wp_redirection_groups: Total rows added: 2 in 0.00 seconds
+0038.830 (0) Table wp_redirection_groups: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_redirection_groups.table.gz - 0.5 KB)
+0038.837 (0) Table wp_redirection_items: Total expected rows (approximate): 1
+0038.841 (0) Table wp_redirection_items: Total rows added: 1 in 0.00 seconds
+0038.844 (0) Table wp_redirection_items: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_redirection_items.table.gz - 0.6 KB)
+0038.851 (0) Table wp_redirection_logs: Total expected rows (approximate): 0
+0038.855 (0) Table wp_redirection_logs: Total rows added: 1 in 0.00 seconds
+0038.858 (0) Table wp_redirection_logs: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_redirection_logs.table.gz - 0.6 KB)
+0038.864 (0) Table wp_rg_form: Total expected rows (approximate): 2
+0038.868 (0) Table wp_rg_form: Total rows added: 2 in 0.00 seconds
+0038.871 (0) Table wp_rg_form: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_form.table.gz - 0.4 KB)
+0038.878 (0) Table wp_rg_form_meta: Total expected rows (approximate): 2
+0038.881 (0) Table wp_rg_form_meta: Total rows added: 2 in 0.00 seconds
+0038.884 (0) Table wp_rg_form_meta: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_form_meta.table.gz - 2.2 KB)
+0038.891 (0) Table wp_rg_form_view: Total expected rows (approximate): 39
+0038.896 (0) Table wp_rg_form_view: Total rows added: 61 in 0.00 seconds
+0038.899 (0) Table wp_rg_form_view: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_form_view.table.gz - 1.1 KB)
+0038.905 (0) Table wp_rg_incomplete_submissions: Total expected rows (approximate): 0
+0038.908 (0) Table wp_rg_incomplete_submissions: Total rows added: 0 in 0.00 seconds
+0038.911 (0) Table wp_rg_incomplete_submissions: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_incomplete_submissions.table.gz - 0.4 KB)
+0038.918 (0) Table wp_rg_lead: Total expected rows (approximate): 36
+0038.922 (0) Table wp_rg_lead: Total rows added: 36 in 0.00 seconds
+0038.924 (0) Table wp_rg_lead: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_lead.table.gz - 2.5 KB)
+0038.932 (0) Table wp_rg_lead_detail: Total expected rows (approximate): 180
+0038.938 (0) Table wp_rg_lead_detail: Total rows added: 180 in 0.00 seconds
+0038.942 (0) Table wp_rg_lead_detail: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_lead_detail.table.gz - 2.5 KB)
+0038.951 (0) Table wp_rg_lead_detail_long: Total expected rows (approximate): 0
+0038.955 (0) Table wp_rg_lead_detail_long: Total rows added: 0 in 0.00 seconds
+0038.958 (0) Table wp_rg_lead_detail_long: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_lead_detail_long.table.gz - 0.3 KB)
+0038.964 (0) Table wp_rg_lead_meta: Total expected rows (approximate): 64
+0038.968 (0) Table wp_rg_lead_meta: Total rows added: 64 in 0.00 seconds
+0038.971 (0) Table wp_rg_lead_meta: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_lead_meta.table.gz - 0.8 KB)
+0038.979 (0) Table wp_rg_lead_notes: Total expected rows (approximate): 3
+0038.981 (0) Table wp_rg_lead_notes: Total rows added: 3 in 0.00 seconds
+0038.984 (0) Table wp_rg_lead_notes: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_lead_notes.table.gz - 0.5 KB)
+0038.991 (0) Table wp_semplice_revisions: Total expected rows (approximate): 3
+0038.996 (0) Table wp_semplice_revisions: Total rows added: 3 in 0.00 seconds
+0038.999 (0) Table wp_semplice_revisions: finishing file (backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_semplice_revisions.table.gz - 4.5 KB)
+0039.023 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_options.table.gz (1/38): adding to final database dump
+0039.046 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_users.table.gz (2/38): adding to final database dump
+0039.049 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_usermeta.table.gz (3/38): adding to final database dump
+0039.053 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_commentmeta.table.gz (4/38): adding to final database dump
+0039.056 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_comments.table.gz (5/38): adding to final database dump
+0039.059 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_links.table.gz (6/38): adding to final database dump
+0039.061 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_postmeta.table.gz (7/38): adding to final database dump
+0039.087 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_posts.table.gz (8/38): adding to final database dump
+0039.103 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_term_relationships.table.gz (9/38): adding to final database dump
+0039.106 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_term_taxonomy.table.gz (10/38): adding to final database dump
+0039.107 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_termmeta.table.gz (11/38): adding to final database dump
+0039.118 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_terms.table.gz (12/38): adding to final database dump
+0039.121 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_yoast_seo_links.table.gz (13/38): adding to final database dump
+0039.124 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_yoast_seo_meta.table.gz (14/38): adding to final database dump
+0039.129 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_alm.table.gz (15/38): adding to final database dump
+0039.132 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_ewwwio_images.table.gz (16/38): adding to final database dump
+0039.151 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_addon_feed.table.gz (17/38): adding to final database dump
+0039.154 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_draft_submissions.table.gz (18/38): adding to final database dump
+0039.156 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_entry.table.gz (19/38): adding to final database dump
+0039.158 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_entry_meta.table.gz (20/38): adding to final database dump
+0039.160 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_entry_notes.table.gz (21/38): adding to final database dump
+0039.162 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_form.table.gz (22/38): adding to final database dump
+0039.163 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_form_meta.table.gz (23/38): adding to final database dump
+0039.166 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_gf_form_view.table.gz (24/38): adding to final database dump
+0039.167 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_redirection_404.table.gz (25/38): adding to final database dump
+0039.170 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_redirection_groups.table.gz (26/38): adding to final database dump
+0039.171 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_redirection_items.table.gz (27/38): adding to final database dump
+0039.173 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_redirection_logs.table.gz (28/38): adding to final database dump
+0039.174 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_form.table.gz (29/38): adding to final database dump
+0039.176 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_form_meta.table.gz (30/38): adding to final database dump
+0039.178 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_form_view.table.gz (31/38): adding to final database dump
+0039.180 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_incomplete_submissions.table.gz (32/38): adding to final database dump
+0039.182 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_lead.table.gz (33/38): adding to final database dump
+0039.184 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_lead_detail.table.gz (34/38): adding to final database dump
+0039.187 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_lead_detail_long.table.gz (35/38): adding to final database dump
+0039.190 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_lead_meta.table.gz (36/38): adding to final database dump
+0039.191 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_rg_lead_notes.table.gz (37/38): adding to final database dump
+0039.194 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db-table-wp_semplice_revisions.table.gz (38/38): adding to final database dump
+0039.196 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db.gz: finished writing out complete database file (416 KB)
+0039.213 (0) Total database tables backed up: 38 (backup_2018-08-18-2214_Effervescence_bb1971938552-db.gz, size: 451188, sha256)
+0039.227 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0039.230 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0039.231 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0039.233 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-others.zip: others: This file has not yet been successfully uploaded: will queue
+0039.235 (0) backup_2018-08-18-2214_Effervescence_bb1971938552-db.gz: db: This file has not yet been successfully uploaded: will queue
+0039.236 (0) Saving backup history. Total backup size: 184.7 MB
+0039.241 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0039.247 (0) Cloud backup selection (1/1): dropbox with instance (1/1) (last)
+0039.250 (0) Beginning dispatch of backup to remote (dropbox) (instance identifier s-986e2d556b34e2fe867602a36061a42f)
+0039.251 (0) Dropbox: begin cloud upload (using API version 2 with OAuth v2 token)
+0039.263 (0) Dropbox: access gained; setting chunk size to: 1024 KB
+0039.540 (0) Dropbox quota usage: used=4520.2 MB, total=6912 MB, available=2391.8 MB
+0039.544 (0) Dropbox: Attempt to upload: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip to: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip
+0040.942 (0) Dropbox chunked upload: 4.8 % uploaded (AAAAAAAADZGAiwFlVavU8w, 1048576, 6144 KB)
+0045.328 (0) Dropbox chunked upload: 33.8 % uploaded (AAAAAAAADZGAiwFlVavU8w, 7340032, 10240 KB)
+0048.392 (0) Dropbox chunked upload: 82.1 % uploaded (AAAAAAAADZGAiwFlVavU8w, 17825792, 10240 KB)
+0051.423 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAADZGAiwFlVavU8w, 21724247, 10240 KB)
+0052.706 (0) Recording as successfully uploaded: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip (60138b54aaf331c56a32c42a452d3465)
+0052.716 (0) Deleting local file: backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip: OK
+0052.720 (0) Dropbox: File upload success (backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip): 21215 KB in 13s (1610 KB/s)
+0052.913 (0) Dropbox quota usage: used=4540.9 MB, total=6912 MB, available=2371.1 MB
+0052.915 (0) Dropbox: Attempt to upload: backup_2018-08-18-2214_Effervescence_bb1971938552-themes.zip to: backup_2018-08-18-2214_Effervescence_bb1971938552-themes.zip
+0055.858 (0) Dropbox chunked upload: 36 % uploaded (AAAAAAAADZLGD51p2wX6Bg, 10485760, 10240 KB)
+0059.891 (0) Dropbox chunked upload: 72 % uploaded (AAAAAAAADZLGD51p2wX6Bg, 20971520, 10240 KB)
+0062.798 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAADZLGD51p2wX6Bg, 29107206, 10240 KB)
+0066.448 (0) Recording as successfully uploaded: backup_2018-08-18-2214_Effervescence_bb1971938552-themes.zip (af14023615d65bab19aa4bf927161fa7)
+0066.467 (0) Deleting local file: backup_2018-08-18-2214_Effervescence_bb1971938552-themes.zip: OK
+0066.472 (0) Dropbox: File upload success (backup_2018-08-18-2214_Effervescence_bb1971938552-themes.zip): 28425 KB in 13s (2096 KB/s)
+0066.684 (0) Dropbox quota usage: used=4568.7 MB, total=6912 MB, available=2343.3 MB
+0066.687 (0) Dropbox: Attempt to upload: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip to: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip
+0069.862 (0) Dropbox chunked upload: 7.4 % uploaded (AAAAAAAADZM8RucP2_ijiA, 10485760, 10240 KB)
+0073.999 (0) Dropbox chunked upload: 14.8 % uploaded (AAAAAAAADZM8RucP2_ijiA, 20971520, 10240 KB)
+0078.333 (0) Dropbox chunked upload: 22.2 % uploaded (AAAAAAAADZM8RucP2_ijiA, 31457280, 10240 KB)
+0083.499 (0) Dropbox chunked upload: 29.6 % uploaded (AAAAAAAADZM8RucP2_ijiA, 41943040, 10240 KB)
+0086.528 (0) Dropbox chunked upload: 37 % uploaded (AAAAAAAADZM8RucP2_ijiA, 52428800, 10240 KB)
+0091.412 (0) Dropbox chunked upload: 44.4 % uploaded (AAAAAAAADZM8RucP2_ijiA, 62914560, 10240 KB)
+0093.702 (0) Dropbox chunked upload: 51.8 % uploaded (AAAAAAAADZM8RucP2_ijiA, 73400320, 10240 KB)
+0097.719 (0) Dropbox chunked upload: 59.2 % uploaded (AAAAAAAADZM8RucP2_ijiA, 83886080, 10240 KB)
+0347.164 (1) Opened log file at time: Sat, 18 Aug 2018 22:20:09 +0000 on https://effervescence.staging.wpengine.com
+0347.168 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.14.11 WP: 4.9.6 PHP: 7.0.30-0ubuntu0.16.04.1 (apache2handler, Linux pod-120240 3.13.0-153-generic #203-Ubuntu SMP Thu Jun 14 08:52:28 UTC 2018 x86_64) MySQL: 5.7.22 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 50M | 2M) multisite: N openssl: OpenSSL 1.0.2g  1 Mar 2016 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0347.171 (1) Free space on disk containing Updraft's temporary directory: Unknown
+0347.179 (1) Backup run: resumption=1, nonce=bb1971938552, begun at=1534630462 (347s ago), job type=backup, previous check-in=97.7s
+0347.186 (1) Scheduling a resumption (2) after 300 seconds (1534631109) in case this run gets aborted
+0347.200 (1) Checking if we have a zip executable available
+0347.204 (1) Creation of backups of directories: already finished
+0347.226 (1) Saving backup status to database (elements: 8)
+0347.237 (1) Database dump (WordPress DB): Creation was completed already
+0347.251 (1) backup_2018-08-18-2214_Effervescence_bb1971938552-plugins.zip: plugins: This file has already been successfully uploaded
+0347.255 (1) backup_2018-08-18-2214_Effervescence_bb1971938552-themes.zip: themes: This file has already been successfully uploaded
+0347.258 (1) backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0347.260 (1) backup_2018-08-18-2214_Effervescence_bb1971938552-others.zip: others: This file has not yet been successfully uploaded: will queue
+0347.264 (1) backup_2018-08-18-2214_Effervescence_bb1971938552-db.gz: db: This file has not yet been successfully uploaded: will queue
+0347.267 (1) Saving backup history. Total backup size: 184.7 MB
+0347.275 (1) Requesting upload of the files that have not yet been successfully uploaded (3)
+0347.279 (1) Cloud backup selection (1/1): dropbox with instance (1/1) (last)
+0347.283 (1) Beginning dispatch of backup to remote (dropbox) (instance identifier s-986e2d556b34e2fe867602a36061a42f)
+0347.286 (1) Dropbox: begin cloud upload (using API version 2 with OAuth v2 token)
+0347.291 (1) Dropbox: access gained; setting chunk size to: 10240 KB
+0347.523 (1) Dropbox quota usage: used=4568.7 MB, total=6912 MB, available=2343.3 MB
+0347.527 (1) This is a resumption: 83886080 bytes had already been uploaded
+0347.531 (1) Dropbox: Attempt to upload: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip to: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip
+0348.017 (1) Dropbox chunked upload exception (Exception): Submitted input out of alignment: got [83886080] expected [94371840] (line: 200, file: /nas/content/staging/effervescence/wp-content/plugins/updraftplus/includes/Dropbox2/API.php)
+0348.021 (1) Dropbox not yet aligned: tried=83886080, wanted=94371840; will attempt recovery
+0352.167 (1) Dropbox chunked upload: 74 % uploaded (AAAAAAAADZM8RucP2_ijiA, 104857600, 10240 KB)
+0353.984 (1) Dropbox chunked upload: 81.4 % uploaded (AAAAAAAADZM8RucP2_ijiA, 115343360, 10240 KB)
+0356.957 (1) Dropbox chunked upload: 88.8 % uploaded (AAAAAAAADZM8RucP2_ijiA, 125829120, 10240 KB)
+0360.214 (1) Dropbox chunked upload: 96.2 % uploaded (AAAAAAAADZM8RucP2_ijiA, 136314880, 10240 KB)
+0363.351 (1) Dropbox chunked upload: 100 % uploaded (AAAAAAAADZM8RucP2_ijiA, 141768105, 10240 KB)
+0367.962 (1) Recording as successfully uploaded: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip (fd46fbb3e6970970db37d93af1976fff)
+0368.034 (1) Deleting local file: backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip: OK
+0368.039 (1) Dropbox: File upload success (backup_2018-08-18-2214_Effervescence_bb1971938552-uploads.zip): 138445 KB in 20s (6749 KB/s)
+0368.188 (1) Dropbox quota usage: used=4703.9 MB, total=6912 MB, available=2208.1 MB
+0368.191 (1) Dropbox: Attempt to upload: backup_2018-08-18-2214_Effervescence_bb1971938552-others.zip to: backup_2018-08-18-2214_Effervescence_bb1971938552-others.zip
+0369.851 (1) Dropbox chunked upload: 100 % uploaded (AAAAAAAADZRUYBQ0Hnl7YQ, 630989, 10240 KB)
+0371.123 (1) Recording as successfully uploaded: backup_2018-08-18-2214_Effervescence_bb1971938552-others.zip (be3b22703898a60b3fe959618f4f1373)
+0371.131 (1) Deleting local file: backup_2018-08-18-2214_Effervescence_bb1971938552-others.zip: OK
+0371.134 (1) Dropbox: File upload success (backup_2018-08-18-2214_Effervescence_bb1971938552-others.zip): 616 KB in 2s (209 KB/s)
+0371.290 (1) Dropbox quota usage: used=4704.5 MB, total=6912 MB, available=2207.5 MB
+0371.293 (1) Dropbox: Attempt to upload: backup_2018-08-18-2214_Effervescence_bb1971938552-db.gz to: backup_2018-08-18-2214_Effervescence_bb1971938552-db.gz
+0372.210 (1) Dropbox chunked upload: 100 % uploaded (AAAAAAAADZUHnRKnAGqJlQ, 451188, 10240 KB)
+0373.931 (1) Recording as successfully uploaded: backup_2018-08-18-2214_Effervescence_bb1971938552-db.gz (2ac078dfc4de0441ace54c222d1af006)
+0373.939 (1) Deleting local file: backup_2018-08-18-2214_Effervescence_bb1971938552-db.gz: OK
+0373.942 (1) Dropbox: File upload success (backup_2018-08-18-2214_Effervescence_bb1971938552-db.gz): 440 KB in 2s (166 KB/s)
+0373.951 (1) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0373.954 (1) Number of backup sets in history: 2; groups (db): 1
+0373.956 (1) Examining (for databases) backup set with group_id=0, nonce=bb1971938552, datestamp=1534630462 (Aug 18 2018 22:14:22)
+0373.958 (1) This backup set is the backup set just made, so will not be deleted.
+0373.958 (1) Examining (for databases) backup set with group_id=0, nonce=82b5caa4750d, datestamp=1527734279 (May 31 2018 02:37:59)
+0373.958 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0373.960 (1) Number of backup sets in history: 2; groups (files): 1
+0373.962 (1) Examining (for files) backup set with nonce=bb1971938552, datestamp=1534630462 (Aug 18 2018 22:14:22)
+0373.962 (1) This backup set is the backup set just made, so will not be deleted.
+0373.963 (1) This backup set is the backup set just made, so will not be deleted.
+0373.964 (1) This backup set is the backup set just made, so will not be deleted.
+0373.964 (1) This backup set is the backup set just made, so will not be deleted.
+0373.964 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0373.966 (1) Examining (for files) backup set with nonce=82b5caa4750d, datestamp=1527734279 (May 31 2018 02:37:59)
+0373.966 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0373.966 (1) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0373.971 (1) Resume backup (bb1971938552, 1): finish run
+0373.975 (1) There were no errors in the uploads, so the 'resume' event (2) is being unscheduled
+0373.984 (1) Fetching RSS news feed
+0374.570 (1) Fetched RSS news feed; result is a: SimplePie
+0374.721 (1) Sending email ('Files and database (Full backup)') report (attachments: 0, size: 0 KB) to: janni...
+0374.801 (1) The backup apparently succeeded and is now complete

@@ -1,0 +1,12 @@
+.alm-btn-wrap { 
+  text-align: center;
+
+  button {
+    @extend .btn;
+    @extend .btn--liquid;
+    @extend .btn--liquid-red;
+
+    &.done { display: none; }
+  }
+
+}

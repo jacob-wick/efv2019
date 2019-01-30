@@ -1,0 +1,280 @@
+@font-face {font-family: 'Cormorant-Light';src: url('../fonts/cormorant/Cormorant-Light.eot');src: url('../fonts/cormorant/Cormorant-Light.eot?#iefix') format('embedded-opentype'),url('../fonts/cormorant/Cormorant-Light.woff2') format('woff2'),url('../fonts/cormorant/Cormorant-Light.woff') format('woff'),url('../fonts/cormorant/Cormorant-Light.ttf') format('truetype');}
+@font-face {font-family: 'Cormorant-Regular';src: url('../fonts/cormorant/Cormorant-Regular.eot');src: url('../fonts/cormorant/Cormorant-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/cormorant/Cormorant-Regular.woff2') format('woff2'),url('../fonts/cormorant/Cormorant-Regular.woff') format('woff'),url('../fonts/cormorant/Cormorant-Regular.ttf') format('truetype');}
+
+// ==================================================================
+
+@mixin header($style) {
+
+	// determine font family
+	@if index("h1" "h2" "h3" "h4-cap", $style) {
+		font-family: $font-family-head;
+	} @else if index("h4" "h3-sans" "h4-sans" "h5", $style) {
+		font-family: $font-family-sans;
+	}
+
+	// determine font size
+	@if index("h1", $style) {
+		font-size: em(50);
+	} @else if index("h2", $style) {
+		font-size: em(40);
+	} @else if index("h3", $style) {
+		font-size: em(30);
+	} @else if index("h3-sans", $style) {
+		font-size: em(20);
+	} @else if index("h4" "h4-sans" "h4-cap", $style) {
+		font-size: em(18);
+	} @else if index("h5", $style) {
+		font-size: em(16);
+	}
+
+	// determine line-height
+	@if index("h1" "h2", $style) {
+		line-height: 1.1;
+	} @else if index("h3", $style) {
+		line-height: 1.2;
+	} @else {
+		line-height: 1.4;
+	}
+
+	// determine font-weight
+	@if index("h3-sans", $style) {
+		font-weight: 300;
+	}
+
+	// determine letter-spacing
+	@if index("h3-sans", $style) {
+		letter-spacing: 1.5px;
+	} @else if index("h4-cap", $style) {
+		letter-spacing: 1.25px;
+	}
+
+	@if index("h4-cap", $style) {
+		text-transform: uppercase;
+	}
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	@include for-tablet-landscape-up {
+
+		// determine font size
+		@if index("h1", $style) {
+			font-size: em(53.6);
+		} @else if index("h2", $style) {
+			font-size: em(50);
+		} @else if index("h3", $style) {
+			font-size: em(40);
+		} @else if index("h3-sans", $style) {
+			font-size: em(30);
+		} @else if index("h4" "h4-sans" "h4-cap", $style) {
+			font-size: em(24);
+		} @else if index("h5", $style) {
+			font-size: em(18);
+		}
+
+		// determine line-height
+		@if index("h1" "h2", $style) {
+			line-height: 1;
+		}
+
+	}
+
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	@include for-phone-only {
+
+		// determine font size
+		@if index("h1", $style) {
+			font-size: em(40);
+		}
+
+	}
+
+}
+
+
+@mixin para($style: "p") {
+
+	// determine font-family
+	@if index("sans" "sans-sm-cap", $style) {
+		font-family: $font-family-sans;
+	} @else {
+		font-family: $font-family-text;
+	}
+
+	// determine font size
+	@if index("p", $style) {
+		font-size: em(20);
+	} @else if index("sans", $style) {
+		font-size: em(16);
+	} @else if index("sans-sm-cap", $style) {
+		font-size: em(10);
+	} @else if index("lg", $style) {
+		font-size: em(26);
+	}
+
+	// determine line-height
+	@if index("asdf", $style) {
+		line-height: 1.4;
+	} @else {
+		line-height: 1.8;
+	}
+
+	// determine font-weight
+	@if index("sans", $style) {
+		font-weight: 300;
+	}
+
+	// determine font-weight
+	@if index("sans-sm-cap", $style) {
+		letter-spacing: 1.7px;
+	}
+
+	// determine font-weight
+	@if index("sans-sm-cap", $style) {
+		text-transform: uppercase;
+	}
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	@include for-phone-only {
+
+		// determine font size
+		@if index("p", $style) {
+			font-size: em(18);
+		}
+
+	}
+
+}
+
+// ==================================================================
+
+body { font-family: $font-family-text; }
+
+.prehead {
+	display: block;
+	font-family: $font-family-sans;
+	font-size: em(10);
+	line-height: 1.2;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.head-label {
+	display: inline-block;
+	color: #ffffff;
+	background-color: color('background-dk');
+
+	&.caption { padding: .5rem .7rem .4rem; }
+
+	&.h4-sans { padding: .75rem 2rem .5rem; }
+}
+
+.h1 { @include header('h1') }
+.h2 { @include header('h2') }
+.h3 { @include header('h3') }
+.h4 { @include header('h4') }
+.h5 { @include header('h5') }
+
+.h3-sans { @include header('h3-sans') }
+.h4-sans { @include header('h4-sans') }
+.h4-cap  { @include header('h4-cap') }
+
+.sans 	 { font-family: $font-family-sans; }
+.sans-lt { font-weight: 300; }
+
+.p 							{ @include para() }
+.p-sans 				{ @include para('sans'); }
+.p-sans-sm-cap 	{ @include para('sans-sm-cap'); }
+
+b,
+strong,
+.strong { font-weight: bold; }
+
+.caption {
+	font-size: em(14);
+	font-family: $font-family-sans;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+i,
+.em { font-style: italic; }
+
+.wysiwyg {
+	@include pull-up-down-content();
+
+	p, ul > li, ol > li {
+		@extend .p;
+		margin-bottom: 1.2rem;
+
+		a { @include inline-link-animation($border-color: rgba(color('primary'),0.2), $hover-border-color: color('primary')); }
+	}
+
+	h1, h2 {
+		@extend .h2;
+		margin-top: 1rem;
+	}
+
+	h3 {
+		@extend .h3;
+		margin-top: 1rem;
+	}
+
+	h4 {
+		@extend .h4;
+		margin-top: 1rem;
+	}
+
+	b, strong { @extend .strong; }
+
+	i, em { font-style: italic; }
+
+	ul, ol { margin: 1rem 0% 1rem 0%; }
+
+	ul li, ol li {
+		padding-left: 0.25rem;
+	}
+
+	ul { list-style: disc; }
+	ul ul { list-style: square; }
+
+	ol { list-style: decimal; }
+
+	blockquote {
+		overflow: hidden;
+		margin: 3rem span(1 of 7) 1rem span(1 of 7)+gutter();	
+
+		p {
+			font-size: 145%;
+			font-family: $font-family-sans;
+			font-weight: 300;
+		}
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+	hr {
+		padding: 0;
+		margin: 3rem 0;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+		border-top: 1px solid color('secondary');
+	}
+
+	&--sans {
+		p { @include para('sans'); }
+	}
+
+	&--sm {
+		// font-size: 0.8em;
+	}
+
+	&--heavy {
+		p { font-weight: 300; }
+	}
+
+}

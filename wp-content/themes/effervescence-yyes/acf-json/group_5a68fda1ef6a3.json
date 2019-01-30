@@ -1,0 +1,50 @@
+{
+    "key": "group_5a68fda1ef6a3",
+    "title": "Tax: Producer",
+    "fields": [
+        {
+            "key": "field_5a68fdaed90df",
+            "label": "Clone Shared Meta Fields",
+            "name": "producers_clone_term_meta",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5a85c6b7cac4a",
+                "field_5a68f2ed46aa0",
+                "field_5a68eea623c97",
+                "field_5a68cda3135c9",
+                "field_5a68eda7a5824",
+                "field_5a68fba28eade"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "efrvs_producer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1518716975
+}

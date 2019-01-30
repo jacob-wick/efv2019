@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="65" viewBox="0 0 1700 65" preserveAspectRatio="none">
+  
+  <defs>
+    <pattern id="curvebg" patternUnits="userSpaceOnUse" width="361" height="370">
+      <image xlink:href="<?php echo get_template_directory_uri(); ?>/assets/dist/img/whitenoise-361x370.png" x="0" y="0" width="361" height="370" />
+    </pattern>
+  </defs>
+
+  <path d="M0.317526004,52.4961622 C67.616993,46.4506908 222.020965,21.2714445 480.16238,22.2516013 C738.303794,23.2317581 876.469643,42.9273199 1125.52862,42.9273199 C1374.58759,42.9273199 1609.42228,9.5275528 1700,0 C1700,1.77888942 1700,23.4455561 1700,65 L0,65 C0.193476042,62.4175526 0.299318044,58.2496067 0.317526004,52.4961622 Z"
+    fill="url(#curvebg)" />
+</svg>

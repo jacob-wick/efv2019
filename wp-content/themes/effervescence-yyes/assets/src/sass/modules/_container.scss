@@ -1,0 +1,10 @@
+.container {
+  @include clearfix;
+  position: relative;
+  margin: 0 auto;
+  max-width: site-width('lg');
+  // background: susy-svg-grid($colors: rgba(162, 0, 255, 0.03)) no-repeat scroll;
+
+  &--lg { max-width: 1200px; }
+  &--xl { max-width: site-width('xl'); }
+}

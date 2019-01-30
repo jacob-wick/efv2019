@@ -1,0 +1,121 @@
+ // water fill effect credit to: https://codepen.io/kevinfan23/pen/BKbWxP
+
+.btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 1rem 1rem 0.8rem 1rem;
+  line-height: 1;
+  color: color('primary');
+  font-size: em(14);
+  font-family: $font-family-sans;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid color('primary');
+
+  &__label {
+    z-index: 2;
+    position: relative;
+    @include arrow-link;
+  }
+
+  &:hover, &:focus {
+    .no-js & {
+      transition: background .25s ease;
+      background-color: darken(color('primary'), 20%);
+    }
+  }
+
+  &:hover &__label {
+    color: color('primary');
+  }
+
+  &:hover &__effect {
+    background-position: 100% 60%;
+  }
+
+  &--no-arrow &__label {
+    &::after { content: ''; }
+  }
+
+  &--liquid &__effect {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+		background-position: 0 -50%;
+		background-repeat: repeat-x;
+	  transition: background-position .75s ease;
+    background-image: url('../img/btn-liquid-cream.png');
+  }
+  
+  &--left { margin-right: -1px; }
+
+  &--liquid-red {
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: color('primary');
+  }
+
+  &--liquid-red &__effect { background-image: url('../img/btn-liquid-red.png'); }
+
+  &--liquid-red:hover &__label { color: #ffffff; }
+
+  &--liquid-red &__effect { background-image: url('../img/btn-liquid-red.png'); }
+
+  &.open-eventbrite-modal {
+
+    .no-js & { display: none; }
+  
+  }
+
+  @include for-tablet-portrait-up {
+    font-size: em(16);
+  }
+
+}
+
+.btn-group {
+  margin-bottom: -1rem;
+
+  .btn {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    &:last-child { margin-right: 0; }
+  }
+
+  &--2-half {
+
+    .btn {
+      width: 70%;
+      margin: 0 0 1rem;
+    }
+
+  }
+
+  @include for-tablet-portrait-up {
+
+    &--2-half {
+
+      .btn {
+        width: 40%;
+        margin: 0 1rem 0 0;
+
+        &:last-child { margin-right: 0; }
+      }
+  
+    }
+
+  }
+
+}

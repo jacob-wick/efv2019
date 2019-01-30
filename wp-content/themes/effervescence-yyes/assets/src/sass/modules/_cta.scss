@@ -1,0 +1,36 @@
+.cta {
+  position: relative;
+
+  &--aside {
+    text-align: center;
+    max-width: site-width('sm');
+    margin: 0 auto;
+  }
+
+  &--aside &__text {
+    margin-bottom: 2rem;
+  }
+
+  @include for-tablet-portrait-up {
+    
+    &--aside {
+      display: flex;
+      max-width: none;;
+      align-items: center;
+      text-align: left;
+    }
+
+    &--aside &__text {
+      width: span(7 of 12);
+      margin-left: span(1 of 12) + gutter();
+      margin-right: gutter();
+      margin-bottom: 0;
+    }
+  
+    &--aside &__btn {
+      width: span(3 of 12);
+    }
+  
+  }
+
+}

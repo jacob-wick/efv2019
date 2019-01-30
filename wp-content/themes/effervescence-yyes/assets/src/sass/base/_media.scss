@@ -1,0 +1,255 @@
+.responsive-image {
+  display: block;
+  width: 100%;
+  height: inherit;
+}
+
+.circle-crop {
+  position: relative;
+  border-radius: 100%;
+  overflow: hidden; 
+}
+
+.media-background-texture {
+  background: -moz-linear-gradient(top, rgba(242,208,145,0) 0%, rgba(242,208,145,0) 1%, rgba(242,208,145,0.3) 100%), url('../img/whitenoise-361x370.png'); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(242,208,145,0) 0%,rgba(242,208,145,0) 1%,rgba(242,208,145,0.3) 100%), url('../img/whitenoise-361x370.png'); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(242,208,145,0) 0%,rgba(242,208,145,0) 1%,rgba(242,208,145,0.3) 100%), url('../img/whitenoise-361x370.png'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2d091', endColorstr='#80f2d091',GradientType=0 ); /* IE6-9 */
+}
+
+
+.thumbnail-flair {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  // Dots - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  &__dot {
+    position: absolute;
+    background-image: url('../img/circle-flair-dot@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 1s ease;
+    transition-delay: .25s;
+
+    &--1 {
+      height: 0%;
+      width: 0%;
+      top: -45%;
+      right: 20%;
+      
+      .animate.is-visible & {
+        height: 26%;
+        width: 26%;
+      }
+    }
+
+    &--2 {
+      height: 0%;
+      width: 0%;
+      top: -15%;
+      right: 0%;
+      transition-delay: .5s;
+
+      .animate.is-visible & {
+        height: 10%;
+        width: 10%;
+      }
+    }
+
+    &--3 {
+      height: 0%;
+      width: 0%;
+      bottom: -25%;
+      left: 10%;
+      transition-delay: .75s;
+
+      .animate.is-visible & {
+        height: 18%;
+        width: 18%;
+      }
+    }
+
+  }
+
+  &--c &__dot {
+
+    &--1 {
+      height: 0%;
+      width: 0%;
+      top: -40%;
+      right: -20%;
+
+      .animate.is-visible & {
+        height: 27%;
+        width: 27%;
+      }
+    }
+
+    &--2 {
+      height: 0%;
+      width: 0%;
+      top: -42%;
+      right: 25%;
+
+      .animate.is-visible & {
+        height: 10%;
+        width: 10%;
+      }
+    }
+
+    &--3 {
+      height: 0%;
+      width: 0%;
+      bottom: 10%;
+      left: -30%;
+
+      .animate.is-visible & {
+        height: 10%;
+        width: 10%;
+      }
+    }
+
+  }
+
+  &--d &__dot {
+
+    &--1 {
+      height: 0%;
+      width: 0%;
+      top: auto;
+      left: 25%;
+      bottom: -30%;
+      right: auto;
+
+      .animate.is-visible & {
+        height: 25%;
+        width: 25%;
+      }
+    }
+
+    &--2 {
+      height: 0%;
+      width: 0%;
+      top: auto;
+      left: 12%;
+      bottom: -8%;
+      right: auto;
+
+      .animate.is-visible & {
+        height: 10%;
+        width: 10%;
+      }
+    }
+
+    &--3 {
+      height: 0%;
+      width: 0%;
+      top: -25%;
+      right: 0;
+      bottom: auto;
+      left: 0%;
+
+      .animate.is-visible & {
+        height: 18%;
+        width: 18%;
+      }
+    }
+
+  }
+
+  &--e &__dot {
+
+    &--1 {
+      height: 0%;
+      width: 0%;
+      top: -25%;
+      right: -5%;
+      bottom: auto;
+      left: auto;
+
+      .animate.is-visible & {
+        height: 25%;
+        width: 25%;
+      }
+    }
+
+    &--2 {
+      height: 0%;
+      width: 0%;
+      top: -15%;
+      right: 30%;
+      bottom: auto;
+      left: auto;
+
+      .animate.is-visible & {
+        height: 12%;
+        width: 12%;
+      }
+    }
+
+    &--3 {
+      height: 0%;
+      width: 0%;
+      top: auto;
+      right: 70%;
+      bottom: -20%;
+      left: auto;
+
+      .animate.is-visible & {
+        height: 15%;
+        width: 15%;
+      }
+    }
+
+  }
+
+  // Curves - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  &__curve {
+    position: absolute;
+    background-image: url('../img/circle-flair-curve-1@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition: opacity 2s ease;
+    top: -5%;
+    bottom: auto;
+    left: -7%;
+    height: 105%;
+    width: 115%;
+
+    .animate.is-visible & { opacity: 1; }
+  }
+
+  &--b &__curve {
+    top: 0%;
+    bottom: auto;
+    left: -10%;
+    height: 105%;
+    width: 120%;
+    background-image: url('../img/circle-flair-curve-2@2x.png');
+  }
+
+  &--c &__curve,
+  &--d &__curve {
+    top: -10%;
+    bottom: auto;
+    left: -10%;
+    height: 105%;
+    width: 120%;
+    background-image: url('../img/circle-flair-curve-3@2x.png');
+  }
+
+  &--e &__curve {
+    top: auto;
+    bottom: -2%;
+    left: -10%;
+    height: 95%;
+    width: 115%;
+    background-image: url('../img/circle-flair-curve-2@2x.png');
+  }
+
+}

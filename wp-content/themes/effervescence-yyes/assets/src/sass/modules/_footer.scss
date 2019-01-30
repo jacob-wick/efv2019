@@ -1,0 +1,150 @@
+.footer-subhead {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  letter-spacing: 1.7px;
+  font-weight: 300;
+
+  @include for-tablet-landscape-up {
+
+    &--left { text-align: left; }
+  
+  }
+  
+}
+
+
+.footer-logos {
+  @include clearfix;
+  margin: 0 auto;
+  max-width: 350px;
+  margin-bottom: -3rem;
+
+  li {
+    float: left;
+    width: 100%;
+    margin-bottom: 3rem;
+
+    a {
+      display: block;
+      padding: 0 .75rem;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: inherit;
+      margin: 0 auto;
+    }
+
+    &.full {
+      width: 100%;
+
+      img { width: 80%; }
+    }
+
+    &.one-third {
+      width: 38%;
+    }
+
+    &.two-thirds {
+      width: 62%;
+    }
+
+    &.half {
+      width: 50%;
+    }
+
+  }
+
+  &__label {
+    display: block;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+}
+
+
+.footer-menu {
+  @include clearfix;
+  margin: 0 auto 1rem;
+  max-width: 350px;
+  text-align: center;
+
+  li { margin-bottom: 2rem; }
+
+  a {
+    font-weight: 300;
+    font-family: $font-family-sans;
+    color: #ffffff;
+    @include opacity-hover();
+  }
+
+  @include for-tablet-landscape-up {
+
+    text-align: left;
+
+  }
+
+}
+
+
+.footer {
+  background-color: color('background-dk');
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: #ffffff;
+
+  &__menu,
+  &__sponsors {
+    margin-bottom: 5rem;
+  }
+
+  &__sponsors,
+  &__beneficiaries {
+    &--hide { display: none; }
+  }
+
+  &__menu {
+    .icon-box-list { text-align: center; }
+  }
+
+  &__copyright {
+    padding: 3rem 0;
+    font-family: $font-family-sans;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.3px;
+  }
+
+  @include for-tablet-landscape-up {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+
+    &__menu {
+      .icon-box-list { text-align: left; }
+    }
+
+    &__menu,
+    &__sponsors,
+    &__beneficiaries {
+      float: left;
+      width: span(4 of 12);
+      margin-right: gutter();
+      margin-bottom: 0;
+    }
+
+    &__beneficiaries {
+      float: right;
+      margin-right: 0;
+    }
+
+    &__copyright {
+      text-align: left;
+    }
+
+  }
+
+}
+

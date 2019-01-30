@@ -1,0 +1,79 @@
+// PADDING AND MARGIN HELPERS
+// =======================================================
+@for $i from 0 through 12 {
+  .pt-#{$i} { padding-top: #{$i}rem; }
+  .pb-#{$i} { padding-bottom: #{$i}rem; }
+  .mt-#{$i} { margin-top: #{$i}rem; }
+  .mb-#{$i} { margin-bottom: #{$i}rem; }
+}
+
+.pb-0-5 { padding-bottom: 0.5rem; }
+.pb-1-5 { padding-bottom: 1.5rem; }
+.mb-0-5 { margin-bottom: 0.5rem; }
+.mb-1-5 { margin-bottom: 1.5rem; }
+
+@include for-phone-only {
+
+  @for $i from 0 through 12 {
+    .mob-pt-#{$i} { padding-top: #{$i}rem !important; }
+    .mob-pb-#{$i} { padding-bottom: #{$i}rem !important; }
+    .mob-mt-#{$i} { margin-top: #{$i}rem !important; }
+    .mob-mb-#{$i} { margin-bottom: #{$i}rem !important; }
+  }
+
+}
+
+.edge-pad	{ padding-left: 20px; padding-right: 20px; }
+
+.float-l { float: left; }
+.float-r { float: right; }
+
+// Site Width - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.site-width-md {
+  max-width: site-width('md');
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-width-sm {
+  max-width: site-width('sm');
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Text - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-upper { text-transform: uppercase; }
+
+//  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.block { display: block !important; }
+.inline-block { display: inline-block !important; }
+.nowrap { white-space: nowrap; }
+
+// Rules - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.t-rule-lt { border-top: 1px solid color('rule-lt'); }
+.t-rule-primary { border-top: 1px solid color('primary'); }
+.t-rule-secondary { border-top: 1px solid color('secondary'); }
+.t-rule-text { border-top: 1px solid color('text'); }
+.b-rule-text { border-bottom: 1px solid color('text'); }
+.b-rule-lt { border-bottom: 1px solid color('rule-lt'); }
+.b-rule-primary-dk { border-bottom: 1px solid color('primary-dk'); }
+.b-rule-secondary { border-bottom: 1px solid color('secondary'); }
+
+// Color applications - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+.c-text    { color: color('text'); }
+.c-primary { color: color('primary'); }
+.bgc-background-dk { background-color: color('background'); }
+
+// Utilities
+
+.clearfix {
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
