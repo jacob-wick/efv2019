@@ -60,6 +60,22 @@
             "new_lines": "wpautop"
         },
         {
+            "key": "field_5c537fd6f8f58",
+            "label": "Showclix URL",
+            "name": "showclix_url",
+            "type": "url",
+            "instructions": "Copy & paste the Showclix URL",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_5a621095d626c",
             "label": "Content",
             "name": "event_content",
@@ -652,5 +668,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1519933169
+    "modified": 1548976133
 }

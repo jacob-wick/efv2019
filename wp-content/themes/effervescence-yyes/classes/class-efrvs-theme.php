@@ -258,9 +258,9 @@ class EFRVS_Theme {
 		// to launch the eventbrite modal. using javascript we watch for a link click
 		// with this class and we simulate a click on a hidden button that's output
 		// in the footer near the injected eventbrite script. see inject_footer()
-		if ( array_key_exists('eventbrite', $meta) && $meta['eventbrite'] === true  ) {
+		/* if ( array_key_exists('eventbrite', $meta) && $meta['eventbrite'] === true  ) {
 			// $classes[] = 'open-eventbrite-modal';
-		}
+		} */
 
 		return implode(' ', $classes);
 	}

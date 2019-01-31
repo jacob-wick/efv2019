@@ -22,8 +22,8 @@
       <?php
 
         $btn_meta = array(
-          'text'          => __('Purchase On Eventbrite', EFRVS_THEME_TDOMAIN),
-          'url'           => get_field('eventbrite_sales_url','option'),
+          'text'          => __('Purchase On Showclix', EFRVS_THEME_TDOMAIN),
+          'url'           => get_field('showclix_url'),
           'color'         => 'Red',
           'liquid_effect' => true,
           'target'        => true,
