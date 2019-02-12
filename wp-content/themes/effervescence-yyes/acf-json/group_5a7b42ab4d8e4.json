@@ -20,7 +20,8 @@
                 "field_5a68eda7a5824",
                 "field_5a68f2ed46aa0",
                 "field_5a696b2b7a980",
-                "field_5a68cda3135c9"
+                "field_5a68cda3135c9",
+                "field_5c5b3554b2d65"
             ],
             "display": "seamless",
             "layout": "block",
@@ -45,5 +46,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1518717041
+    "modified": 1549481417
 }

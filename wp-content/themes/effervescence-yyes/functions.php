@@ -76,12 +76,13 @@ add_action('acf/save_post', array('EFRVS_Theme_Admin','do_on_acf_save_post'), 20
 // Show only published posts in ACF relationship fields
 add_filter('acf/fields/relationship/query', array('EFRVS_Theme_Admin','show_only_published_posts_in_relationship_field'), 10, 3);
 
+// 2019 Edits -- Rainwater
+include( TEMPLATEPATH . '/classes/class-efrvs-personalities.php');
+include( TEMPLATEPATH . '/classes/class-efrvs-past_festivals.php');
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 //  TEST AREA - ALL CONTENTS SHOULD BE MOVED TO APPROPRIATE LOCATION
-
-
 
 // END TEST AREA
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

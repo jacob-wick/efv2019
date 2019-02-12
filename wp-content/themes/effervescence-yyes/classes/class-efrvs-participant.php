@@ -14,6 +14,23 @@ class EFRVS_Participant {
     $this->term_link = $this->set_custom_term_link();
   }
 
+  // ok let's try to get the year in here
+
+  public function get_detail()
+  {
+
+    $participant = $this->participant;
+
+    if ($participant->taxonomy == 'efrvs_sommelier') {
+      $detail = 'Sommelier';
+    } elseif ($participant->taxonomy == 'efrvs_chef') {
+      $detail = 'Chef';
+    } elseif ($participant->taxonomy == 'efvrs_speaker') {
+      $detail = 'Speaker';
+    }
+
+    return $detail;
+  }
   
   public function get_org_name()
   {

@@ -37,13 +37,19 @@ class EFRVS_Archive {
   }
 
 
-  public static function get_somelliers()
+  public static function get_sommeliers()
   {
     $args = array(
       'hide_empty'  => false,
       'taxonomy'    => 'efrvs_sommelier',
       'orderby'     => 'term_lname',
-      'meta_key'    => 'term_lname'
+      'meta_key'    => 'term_lname',
+      'meta_query'  => array(
+        array(
+          'key' => 'festival_year',
+          'value' => date( 'Y' )
+          ),
+        ),
     );
 
     return get_terms($args);
@@ -56,7 +62,13 @@ class EFRVS_Archive {
       'hide_empty'  => false,
       'taxonomy'    => 'efrvs_chef',
       'orderby'     => 'term_lname',
-      'meta_key'    => 'term_lname'
+      'meta_key'    => 'term_lname',
+      'meta_query'  => array(
+        array(
+          'key' => 'festival_year',
+          'value' => date( 'Y' )
+          ),
+        ),
     );
 
     return get_terms($args);
@@ -75,8 +87,34 @@ class EFRVS_Archive {
     return get_terms($args);
   }
 
+  public static function get_2018_participants()
+  {
+    $args = array(
+      'hide_empty'  => false,
+      'tax_query'    => array(
+                            'relation' => 'OR',
+                            array(
+                              'taxonomy' => 'efrvs_sommelier',
+                              'taxonomy' => 'efrvs_chef',
+                              'taxonomy' => 'efrvs_speaker'
+                              ),
+                            ),  
+      'orderby'     => 'term_lname',
+      'meta_key'    => 'term_lname',
+      'meta_query'  => array(
+                        array(
+                          'key' => 'festival_year',
+                          'value' => '2018'
+                          ),
+                         ),
+    );
 
-  public static function get_participants()
+    return get_terms($args);
+  }
+
+public static function get_2018_detail() {}
+
+public static function get_participants()
   {
     $archive_type = get_field('participant_archive_type');
 
@@ -85,7 +123,7 @@ class EFRVS_Archive {
     switch ($archive_type) :
 
       case 'sommelier':
-        $participants = self::get_somelliers();
+        $participants = self::get_sommeliers();
         break;
 
       case 'chef':
