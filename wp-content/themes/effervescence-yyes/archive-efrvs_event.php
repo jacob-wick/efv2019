@@ -56,7 +56,7 @@
               endwhile;
             ?>
           </ul>
-        <?php endif; ?>
+        <?php endif; wp_reset_postdata(); ?>
 
         <?php if ( isset($_GET['events']) && $_GET['events'] == 'type' ) : ?>
           
@@ -88,7 +88,7 @@
             </ul>
           <?php endif; wp_reset_postdata(); ?>
 
-        <?php endif; ?>
+        <?php endif; wp_reset_postdata(); ?>
 
         <?php get_template_part('parts/packages'); ?>
 

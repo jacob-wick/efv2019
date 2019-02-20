@@ -157,10 +157,39 @@ public static function get_participants()
   public static function get_events_and_group_by_type()
   {
 
+    $year = date( 'Y' );
     $args = array(
       'post_type' => 'efrvs_event',
       'orderby'   => 'efrvs_event_type',
       'order'     => 'ASC',
+      'date_query' => array(
+        array(
+                'year' => date( 'Y' ),
+          ),
+        ),
+    );
+
+    add_filter('posts_clauses', array('EFRVS_Archive','sort_events_by_type'), 10, 2 );
+    $posts = new WP_Query($args);
+    remove_filter('posts_clauses', array('EFRVS_Archive','sort_events_by_type'));
+
+    return $posts;
+
+  }
+
+    public static function get_past_events_and_group_by_type()
+  {
+
+    $year = get_field( 'event_archive_year' );
+    $args = array(
+      'post_type' => 'efrvs_event',
+      'orderby'   => 'efrvs_event_type',
+      'order'     => 'ASC',
+      'date_query' => array(
+        array(
+                'year' => $year
+          ),
+        ),
     );
 
     add_filter('posts_clauses', array('EFRVS_Archive','sort_events_by_type'), 10, 2 );
