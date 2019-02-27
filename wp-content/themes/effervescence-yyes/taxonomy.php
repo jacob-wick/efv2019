@@ -32,7 +32,8 @@
             </div>
           </div>
 
-          <?php if ( have_posts() ) : ?>
+
+            <?php if ( have_posts() ) : ?>
             <div class="content-header__event-list">
               <h3 class="prehead mb-1-5"><?php _e('Participating in:', EFRVS_THEME_TDOMAIN); ?></h3>
               <ul class="nav-list mb-1">

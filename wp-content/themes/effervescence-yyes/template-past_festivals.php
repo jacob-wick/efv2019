@@ -29,7 +29,7 @@
         </header>
 
         <div class="event-list-head">
-          <h3 class="event-list-head__text h4-cap"><?php _e('Featured Events', EFRVS_THEME_TDOMAIN); ?></h3>
+          <h3 class="event-list-head__text h4-cap"><?php _e('Featured Event', EFRVS_THEME_TDOMAIN); ?></h3>
           <a class="event-list-head__link link-primary-to-fade p" href="/effervescence-2018-events-list/"><?php _e('See All Events', EFRVS_THEME_TDOMAIN); ?></a>
         </div>
 
