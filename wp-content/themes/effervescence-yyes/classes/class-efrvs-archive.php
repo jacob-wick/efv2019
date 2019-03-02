@@ -36,12 +36,11 @@ class EFRVS_Archive {
     return get_terms($args);
   }
 
-
-  public static function get_sommeliers()
+  public static function get_chefs()
   {
     $args = array(
       'hide_empty'  => false,
-      'taxonomy'    => 'efrvs_sommelier',
+      'taxonomy'    => 'efrvs_chef',
       'orderby'     => 'term_lname',
       'meta_key'    => 'term_lname',
       'meta_query'  => array(
@@ -55,12 +54,11 @@ class EFRVS_Archive {
     return get_terms($args);
   }
 
-
-  public static function get_chefs()
+  public static function get_sommeliers()
   {
     $args = array(
       'hide_empty'  => false,
-      'taxonomy'    => 'efrvs_chef',
+      'taxonomy'    => 'efrvs_sommelier',
       'orderby'     => 'term_lname',
       'meta_key'    => 'term_lname',
       'meta_query'  => array(
@@ -140,6 +138,35 @@ public static function get_participants()
 
     return $participants;
   }
+
+
+public static function get_participants_bottom()
+  {
+    $archive_type = get_field('participant_archive_type_bottom');
+
+    if (!$archive_type) return;
+
+    switch ($archive_type) :
+
+      case 'sommelier':
+        $participants_bottom = self::get_sommeliers();
+        break;
+
+      case 'chef':
+        $participants_bottom = self::get_chefs();
+        break;
+
+      case 'speaker':
+        $participants_bottom = self::get_speakers();
+        break;
+        
+    endswitch;
+
+    if (empty($participants_bottom)) return;
+
+    return $participants_bottom;
+  }
+
 
 
   public static function get_term_thumbnail($term)

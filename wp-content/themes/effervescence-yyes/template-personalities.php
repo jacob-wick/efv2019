@@ -1,6 +1,7 @@
 <?php // TEMPLATE NAME: Personalities Archive
 
   $participants   = EFRVS_Archive::get_participants();
+  $participants_bottom = EFRVS_Archive::get_participants_bottom();
   $anchor_top = get_field('post_content_top_html_id');
   $anchor_bottom = get_field('post_content_bottom_html_id');
   $bottom_content = get_field('post_content_bottom');
@@ -12,7 +13,7 @@
   
   <div class="content <?php esc_attr_e($EFRVS_Theme->get_main_content_css_classes()); ?>">
     
-    <div class="content__top-curve" id="<?php esc_attr_e(get_field('post_content_top_html_id')); ?>">
+    <div class="content__top-curve">
       <?php include(locate_template('assets/dist/img/top-curve-1.svg')); ?>
     </div>
 
@@ -97,7 +98,7 @@
 
         
       <?php if ($participants_bottom) : ?>
-         <h2 class="h3 mt-6 mb-4 b-rule-text" id="<?php echo $anchor_bottom ?>"><?php _e('Sommeliers'); ?></h2>
+         <h2 class="h3 mt-6 mb-4 b-rule-text" id="<?php echo $anchor_bottom ?>"><?php _e('Sommeliers & Presenters'); ?></h2>
          <ul class="participant-grid mb-4">
             <?php foreach($participants_bottom as $participant) : ?>
 
