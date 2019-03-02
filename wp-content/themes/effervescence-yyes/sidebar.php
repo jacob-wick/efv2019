@@ -83,7 +83,7 @@
 
       <?php if ( $Venue->get_venue_phone() ) : ?>
         <div class="wysiwyg mt-1">
-          <?php echo apply_filters('the_content',$Venue->get_venue_phone()); ?>
+          <a href="tel:<?php echo $Venue->get_venue_phone(); ?>"><?php echo apply_filters('the_content',$Venue->get_venue_phone()); ?></a>
         </div>
       <?php endif; ?>
 
