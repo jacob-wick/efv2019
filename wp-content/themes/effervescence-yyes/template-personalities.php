@@ -30,7 +30,7 @@
         </header>
 
         <?php if ($participants) : ?>
-          <h2 class="h3 mt-6 mb-4 b-rule-text" id="<?php echo $anchor_top ?>"><?php _e('Chefs'); ?></h2>
+          <h2 class="h3 mt-6 mb-4 b-rule-text" id="<?php echo $anchor_top ?>"><?php _e('Chefs & Culinary Presenters'); ?></h2>
           <ul class="participant-grid mb-4">
             <?php foreach($participants as $participant) : ?>
 
@@ -98,7 +98,7 @@
 
         
       <?php if ($participants_bottom) : ?>
-         <h2 class="h3 mt-6 mb-4 b-rule-text" id="<?php echo $anchor_bottom ?>"><?php _e('Sommeliers & Presenters'); ?></h2>
+         <h2 class="h3 mt-6 mb-4 b-rule-text" id="<?php echo $anchor_bottom ?>"><?php _e('Sommeliers'); ?></h2>
          <ul class="participant-grid mb-4">
             <?php foreach($participants_bottom as $participant) : ?>
 
