@@ -105,6 +105,12 @@ class EFRVS_Event {
     
   }
 
+  public static function get_package_link_sidebar($package)
+  {
+    $link = get_field('package_link', $package);
+    return $link;
+  }
+
 
   public static function get_group_participants()
   {

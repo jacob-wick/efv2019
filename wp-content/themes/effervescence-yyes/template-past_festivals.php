@@ -27,21 +27,36 @@
             </div>
           </div>
         </header>
+        
+        <?php $posts = EFRVS_Archive::get_past_events_and_group_by_type(); ?>
 
-        <div class="event-list-head">
-          <h3 class="event-list-head__text h4-cap"><?php _e('Featured Event', EFRVS_THEME_TDOMAIN); ?></h3>
-          <a class="event-list-head__link link-primary-to-fade p" href="/effervescence-2018-events-list/"><?php _e('See All Events', EFRVS_THEME_TDOMAIN); ?></a>
-        </div>
+          <?php if ($posts->have_posts()) : $counter = 0; $previous_subtitle = ''; ?>
+            <ul class="event-list">
+              <?php
+              
+                while ( $posts->have_posts() ) : $posts->the_post();
+                  
+                  $EFRVS_Event = new EFRVS_Event();
+                  $EFRVS_Venue = new EFRVS_Venue();
 
-        <?php $posts = get_field('featured_events'); ?>
-        <?php $counter = 0; ?>
-        <?php if ($posts) : ?>
-          <ul class="event-list mb-3">
-            <?php foreach($posts as $post) : setup_postdata($post); $counter++; ?>
-              <?php include(locate_template('parts/li-event.php')); ?>
-            <?php endforeach; wp_reset_postdata(); ?>
-          </ul>
-        <?php endif; ?>
+                  $subtitle = EFRVS_Event::get_type_term_name();
+                  $counter++;
+
+                  if ($subtitle != $previous_subtitle) {
+                    echo '<li class="event-list-item--divider-subhead" id="'.strtolower( sanitize_title_with_dashes($subtitle) ).'"><h3 class="h4-cap">' . $subtitle . '</h3></li>';
+                  }
+
+                  include(locate_template('parts/li-past-event.php'));
+                  
+                  $previous_subtitle = $subtitle;
+                
+                endwhile;
+              
+              ?>
+            </ul>
+          <?php endif; wp_reset_postdata(); ?>
+
+       <!-- <?php // endif; wp_reset_postdata(); ?> -->
 
         <?php if ($participants) : ?>
           <h2 class="h3 mt-6 mb-4 b-rule-text" id"<?php echo $anchor_top ?>"><?php _e('Personalities'); ?></h2>

@@ -1,6 +1,6 @@
 <li class="package-list-item">
-
   <h3 class="h3 mb-1"><?php echo $package->name; ?></h3>
+
 
   <div class="wysiwyg">
     <?php echo $EFRVS_Package->get_description(); ?>
@@ -13,12 +13,11 @@
     <?php
     
       $btn_meta = array(
-        'text'          => __('Purchase On Eventbrite', EFRVS_THEME_TDOMAIN),
-        'url'           => get_field('eventbrite_sales_url','option'),
+        'text'          => __('Purchase On Showclix', EFRVS_THEME_TDOMAIN),
+        'url'           => $EFRVS_Package->get_package_link(),
         'color'         => 'Red',
         'liquid_effect' => true,
         'target'        => true,
-        'eventbrite'    => true
       );
       echo EFRVS_Theme::get_button($btn_meta);
 

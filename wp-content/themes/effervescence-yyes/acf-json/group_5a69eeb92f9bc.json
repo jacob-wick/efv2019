@@ -41,6 +41,22 @@
             "maxlength": ""
         },
         {
+            "key": "field_5c82cc4eb5f74",
+            "label": "ShowClix Link",
+            "name": "package_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_5a69eefb52e04",
             "label": "Clone Shared Term Meta",
             "name": "packages_shared_term_meta",
@@ -79,5 +95,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1518563584
+    "modified": 1552080682
 }

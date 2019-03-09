@@ -46,48 +46,6 @@
       <?php the_excerpt(); ?>
     </div>
     
-    <div class="btn-group">
-
-      <?php
-
-        if ( EFRVS_Event::is_in_signup_mode() ) :
-
-          $btn_meta = array(
-            'text'          => __('Sign Up For Updates', EFRVS_THEME_TDOMAIN),
-            'url'           => EFRVS_Event::get_url(),
-            'color'         => 'Empty',
-            'liquid_effect' => true,
-            'target'        => false
-          );
-          echo EFRVS_Theme::get_button($btn_meta);
-
-        else :
-
-          $btn_meta = array(
-            'text'          => __('Details', EFRVS_THEME_TDOMAIN),
-            'url'           => get_permalink(),
-            'color'         => 'Empty',
-            'liquid_effect' => true,
-            'target'        => false
-          );
-          echo EFRVS_Theme::get_button($btn_meta);
-          
-          if (get_field('event_sales_status') && !EFRVS_Event::is_sold_out()) :
-            $btn_meta = array(
-              'text'          => __('Purchase On Showclix', EFRVS_THEME_TDOMAIN),
-              'url'           => get_field('showclix_url'),
-              'color'         => 'Red',
-              'liquid_effect' => true,
-              'target'        => true,
-              'eventbrite'    => true
-            );
-            echo EFRVS_Theme::get_button($btn_meta);
-          endif;
-
-        endif;
-
-      ?>
-
-    </div>
+   
   </div>
 </li>

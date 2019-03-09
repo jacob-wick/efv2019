@@ -290,13 +290,6 @@ class EFRVS_Theme {
 		$html .= '<span class="btn__effect"></span>';
 		$html .= '</a>';
 
-		// add noscript html for alternative link to eventbrite tickets
-		if ( array_key_exists('eventbrite', $meta) && $meta['eventbrite'] === true) {
-			// $html .= '<!-- Noscript content for added SEO -->';
-			// $html .= '<noscript><a class="btn btn--liquid btn--liquid-red" href="https://effervescencela.eventbrite.com" rel="noopener noreferrer" ';
-			// $html .= 'target="_blank">'.__('Buy Tickets on Eventbrite', EFRVS_THEME_TDOMAIN).'</a></noscript>';
-		}
-
 		return $html;
 
 	}

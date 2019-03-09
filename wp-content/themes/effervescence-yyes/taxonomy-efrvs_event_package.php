@@ -31,7 +31,7 @@
             </div>
             
             <?php if ($status) : ?>
-              <a href="#" class="btn btn--liquid btn--liquid-red">
+              <a href="<?php the_field('package_link', $qo); ?>" class="btn btn--liquid btn--liquid-red">
                 <span class="btn__label"><?php _e('Purchase', EFRVS_THEME_TDOMAIN); ?></span>
                 <span class="btn__effect"></span>
               </a>

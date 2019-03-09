@@ -83,7 +83,6 @@
               'color'         => 'Red',
               'liquid_effect' => true,
               'target'        => true,
-              'eventbrite'    => true
             );
             echo EFRVS_Theme::get_button($btn_meta);
           endif;

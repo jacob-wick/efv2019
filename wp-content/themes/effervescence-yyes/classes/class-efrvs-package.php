@@ -7,6 +7,7 @@ class EFRVS_Package {
   private $description;
   private $status;
   private $events;
+  private $link;
 
 
   function __construct($term)
@@ -22,6 +23,7 @@ class EFRVS_Package {
     $this->description = get_field('term_description', $this->term);
     $this->price       = get_field('package_price', $this->term);
     $this->status      = get_field('package_sales_status', $this->term);
+    $this->link        = get_field('package_link', $this->term);
   }
 
 
@@ -40,6 +42,11 @@ class EFRVS_Package {
   public function get_description()
   {
     return $this->description;
+  }
+
+  public function get_package_link()
+  {
+    return $this->link;
   }
 
 

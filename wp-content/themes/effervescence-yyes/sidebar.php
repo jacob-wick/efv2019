@@ -18,8 +18,9 @@
       <h3 class="prehead mb-1-5"><?php _e('Also a part of', EFRVS_THEME_TDOMAIN); ?></h3>
       <ul class="nav-list">
         <?php foreach($packages as $package) : ?>
+          <?php $EFRVS_Package = new EFRVS_Package($package); ?>
           <li class="nav-list-item">
-            <a class="nav-list-item__a arrow-link opacity-hover" href="<?php echo home_url('/events/#packages'); ?>"><?php echo $package->name; ?></a>
+            <a class="nav-list-item__a arrow-link opacity-hover" href="<?php echo $EFRVS_Package->get_package_link(); ?>"><?php echo $package->name; ?></a>
           </li>
         <?php endforeach; ?>
       </ul>
