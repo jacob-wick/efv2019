@@ -1,6 +1,6 @@
 {
     "key": "group_5a6a6d872007b",
-    "title": "Template: Beneficiaries",
+    "title": "Template: Charitable Collaborators",
     "fields": [
         {
             "key": "field_5a6a6da3841d7",
@@ -39,7 +39,7 @@
         },
         {
             "key": "field_5a6a6da8841d8",
-            "label": "Beneficiaries",
+            "label": "Charitable Collaborators",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -55,7 +55,7 @@
         },
         {
             "key": "field_5a6a6dc017340",
-            "label": "Beneficiaries",
+            "label": "Charitable Collaborators",
             "name": "beneficiaries",
             "type": "repeater",
             "instructions": "",
@@ -70,7 +70,7 @@
             "min": 0,
             "max": 0,
             "layout": "block",
-            "button_label": "Add Beneficiary",
+            "button_label": "Add Charitable Collaborator",
             "sub_fields": [
                 {
                     "key": "field_5a6a6e1117345",
@@ -236,7 +236,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "template-beneficiaries.php"
+                "value": "template-charitable-collab.php"
             }
         ]
     ],
@@ -250,5 +250,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1518502012
+    "modified": 1553359672
 }

@@ -168,7 +168,7 @@
         },
         {
             "key": "field_5a7ca1986566b",
-            "label": "Beneficiaries",
+            "label": "Charitable Collaborators",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -184,7 +184,7 @@
         },
         {
             "key": "field_5a7c9f8142872",
-            "label": "Beneficiary Column Header",
+            "label": "Charitable Collaborator Column Header",
             "name": "footer_beneficiary_column_header",
             "type": "text",
             "instructions": "",
@@ -203,7 +203,7 @@
         },
         {
             "key": "field_5a7cb5017b168",
-            "label": "Beneficiary Logos",
+            "label": "Charitable Collaborator Logos",
             "name": "footer_beneficiary_logos",
             "type": "repeater",
             "instructions": "",
@@ -348,5 +348,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1518648528
+    "modified": 1553360370
 }

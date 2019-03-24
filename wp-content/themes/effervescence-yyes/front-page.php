@@ -6,6 +6,7 @@
   $home_more_events_button = get_field('home_more_events_button');
   $home_more_events_button = $home_more_events_button['button_options'];
 
+
 ?>
 
   <div class="content content--for-bottom-curve">
@@ -30,6 +31,9 @@
           </ul>
         <?php endif; ?>
 
+        <?php get_template_part('parts/charitable-collaborators'); ?>
+
+
         <?php if ($home_more_events_text) : ?>
           <div class="cta cta--aside animate slide-in-from-bottom">
             <div class="cta__text">
@@ -40,7 +44,7 @@
             </div>
           </div>
         <?php endif; ?>
-
+      
       </div>
     </div>
   </div>
