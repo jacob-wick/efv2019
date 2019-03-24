@@ -145,7 +145,7 @@ class EFRVS_Event {
   public static function get_participant_url($participant)
   {
 
-    if ($participant->taxonomy == 'efrvs_sommelier') {
+    if ($participant->taxonomy == 'efrvs_sommelier' || $participant->taxonomy == 'efrvs_speaker') {
       $url = get_field('term_outbound_url', $participant);
       return $url;
     } else {

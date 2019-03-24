@@ -110,7 +110,7 @@
                       if ($participant['url']) {
                         $target = '_self';
 
-                        if ( $participant['type'] == 'efrvs_sommelier' ) {
+                        if ( $participant['type'] == 'efrvs_sommelier' || $participant['type'] == 'efrvs_speaker' ) {
                           $target = '_blank';
                         }
 
