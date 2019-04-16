@@ -145,11 +145,22 @@ class EFRVS_Event {
   public static function get_participant_url($participant)
   {
 
-    if ($participant->taxonomy == 'efrvs_sommelier' || $participant->taxonomy == 'efrvs_speaker') {
+    $description = get_field('term_description', $participant);
+
+    if ( empty($description) || trim($description) == '' ) {
+      
       $url = get_field('term_outbound_url', $participant);
-      return $url;
-    } else {
-      return get_term_link($participant);
+
+        if ( empty($url) || trim($url) == '' ) {
+          return false;
+         } else {
+           return $url;
+        }
+
+      } else {
+
+      return get_term_link($participant->term_id);
+
     }
 
   }

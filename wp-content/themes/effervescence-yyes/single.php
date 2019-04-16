@@ -110,9 +110,9 @@
                       if ($participant['url']) {
                         $target = '_self';
 
-                        if ( $participant['type'] == 'efrvs_sommelier' || $participant['type'] == 'efrvs_speaker' ) {
+                       /* if ( $participant['type'] == 'efrvs_sommelier' || $participant['type'] == 'efrvs_speaker' ) {
                           $target = '_blank';
-                        }
+                        } */
 
                         $tags['open']  = '<a class="participant-list-item__a opacity-hover" target="' . $target . '" href="' . esc_attr($participant['url']) . '">';
                         $tags['close'] = '</a>';
