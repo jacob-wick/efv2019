@@ -87,22 +87,25 @@ class EFRVS_Participant {
   }
 
 
-  public function set_custom_term_link()
+ public function set_custom_term_link()
   {
     $participant = $this->participant;
+    $description = get_field('term_description', $participant);
 
-    if ( $participant->taxonomy == 'efrvs_sommelier' ) {
-
+    if ( empty($description) || trim($description) == '' ) {
+      
       $url = get_field('term_outbound_url', $participant);
 
-      if ( empty($url) || trim($url) == '' ) {
-        return false;
-      } else {
-        return $url;
-      }
+        if ( empty($url) || trim($url) == '' ) {
+          return false;
+         } else {
+           return $url;
+        }
 
-    } else {
+      } else {
+
       return get_term_link($participant->term_id);
+
     }
 
   }
@@ -117,11 +120,13 @@ class EFRVS_Participant {
   public function get_custom_term_link_target()
   {
     $participant = $this->participant;
+    $description = get_field('term_description');
 
-    if ( $participant->taxonomy == 'efrvs_sommelier' ) {
-      return '_blank';
-    } else {
+
+    if ( $description ) {
       return '_self';
+    } else {
+      return '_blank';
     }
 
   }
